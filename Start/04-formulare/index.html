@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+
+    <style>
+        label { color: #a9245d;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--
+        Kontaktformular
+        chat
+        shop-bestellung
+        uploads
+        bewertung- ratings/review
+        Login/Authentification
+        Newsletteranmeldungen
+
+    -->
+    <form action="index.html" method="get">
+<div> 
+    <label for="NAME-1zeilig">NAME </label>
+    <input 
+    type="text" 
+    id="text1zeilig"
+    name="NAME"
+    placeholder="Your name">
+
+</div>
+<br>
+<div>
+    <label for="PWD">PASSWORD</label>
+    <input type="password" id="PWD">
+</div>
+<br>
+<div>
+    <label for="mehrzeilig">Write what you want</label>
+    <textarea name="mehrzeilig" 
+    id="MZ" 
+    placeholder="write here"
+    cols="30" rows="2"></textarea>
+    <br>
+    <br>
+    <div>
+        <input type="checkbox" name="dsgvo" id="agree" required
+         ><label for="I agree"> I agree</label>
+         <br>
+         <br>
+        <input type="radio" name="anrede" id="anrede_herr" value="Herr">Herr
+            
+        <input type="radio" name="anrede" id="anrede_frau" value="Frau">Frau
+
+         <br>
+         <br>
+         <!-- input button-->
+         <!-- <input type=submit value=send=-->
+         <!-- same as: button-tag-->
+    <div>
+        <input type="submit" value="send">
+    </div>
+
+
+    </div>
+</div>
+
+    </form>
+</body>
+</html>
