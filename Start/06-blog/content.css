@@ -1,0 +1,33 @@
+article {
+    max-width: 300px;
+}
+
+article h3 {
+    color: rgb(197, 124, 124);
+}
+
+article a {
+    color: rgb(197, 124, 124)
+}
+
+article ::after {
+    content: \25b8;
+    color: rgb(197, 124, 124);
+}
+
+@media screen and (min-width: 768px) {
+   body {
+    background-color: rgb(222, 232, 222);
+}
+ 
+
+.flexbox {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+article img {
+    max-width: 100%;
+}
+ }
+

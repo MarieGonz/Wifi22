@@ -9,23 +9,30 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-html {
+html * {
 box-sizing: border-box;
-}
-
-body{
-
 }
 
 header.top {
     display: flex;
-    justify-content:space-between;
-    background: rgb(215, 227, 215);
-    padding: 5px
+   justify-content:space-between;
+   padding: 10px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 100;
+}
+
+#main-menu ul {
+    display: none;
+    
+
+}
+
 }
 header.top > * {
-    background: rgb(220, 196, 200) ;
-    border: 3px solid black;
+    
 }
 
 /*hero image*/
@@ -34,22 +41,30 @@ header.top > * {
   height: 300px;
   padding: 15px;
   position: relative;
+  
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
 }
 #hero-image::before {
     content: "";
     position: absolute;
+    display: block;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
-    opacity: 0.8;
-    z-index: -1;
+    background: rgb(0, 0, 0);
+    opacity: 0.4;
+    z-index: 0;
 }
 
 h1{
 font-weight: 900;
 color: white;
+position: relative ;
+z-index: 10;
 }
 
 #hero-image button{
@@ -63,6 +78,8 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-weight: 500;
 font-size: 16px;
 cursor: pointer;
+position: relative;
+z-index: 10;
 }
 
 #hero-image button:hover {
@@ -111,4 +128,12 @@ footer.the-only-one {
 #footer-nav ul li::marker {
     color: red;
     padding-right: 5px;
+}
+
+/*maximale breite festlegen und element zentrieren*/
+.inner-rapper {
+    max-width: 1024px;
+    /*zentriert ein block-element, gilt für elemente die display:block als eigenschaft haben*/
+    margin-left: auto;
+    margin-right: auto;
 }
