@@ -13,7 +13,7 @@
     
     <div class="wrapper">
 
-        <header>
+        <header id="main-header">
 
 
             <!--Logo: begin-->
@@ -87,16 +87,15 @@
 
             <nav id="footer-nav">
                
-               <ul>
-                    <li>Konditorei Bakery <br>
-                        Musterstraße 1 <br>
-                        2345 Stadt <br>
-                        <br>
-                        <br>
-                        Tel: 0123 123 123 53
-                        Email: bakery@mail.com
-                    </li>
-               </ul>
+                
+                <address>
+                    Konditorei Bakery <br>
+                    Musterstraße 1 <br>
+                    2345 Stadt <br>
+                    Tel: 0123 123 123 53 <br>
+                    Email: bakery@mail.com
+                </address>
+                
                
                 <ul>
                     <li><a href="#">Über uns</a></li>
@@ -118,9 +117,17 @@
         </footer>
 
 
-    </div>
+    </div> 
 
+   
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 
+    <script>
+    $('#main-nav a').on('click', function() {
+        $('#main-nav > ul').toggleClass('show');
+    });
+    </script>
+    
 
 </body>
 </html>
