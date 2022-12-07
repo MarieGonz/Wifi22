@@ -191,7 +191,7 @@ footer.the-only-one {
 }
 
 /*maximale breite festlegen und element zentrieren*/
-.inner-rapper {
+.inner-wrapper {
     max-width: 1024px;
     /*zentriert ein block-element, gilt für elemente die display:block als eigenschaft haben*/
     margin-left: auto;
